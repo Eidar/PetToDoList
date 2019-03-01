@@ -1,0 +1,70 @@
+// =============================================================================
+// Variables
+// =============================================================================
+$heading-font: 'Montserrat', sans-serif;
+$heading-font-b: bold, 'Montserrat', sans-serif;
+$heading-font-em: italic, 'Montserrat', sans-serif;
+$heading-font-em-b: italic, bold, 'Montserrat', sans-serif;
+
+$text-font: 'Leto', sans-serif;
+$text-font-b: bold, 'Leto', sans-serif;
+$text-font-em: italic, 'Leto', sans-serif;
+$text-font-em-b: italic, bold, 'Leto', sans-serif;
+
+
+// =============================================================================
+// Fonts
+// example: $font: (
+//              (font family, path, weight, style),
+//          )
+// =============================================================================
+$font-map: (
+    lato: (
+        ("Lato", "../fonts/Lato-Regular", normal, normal),
+        ("Lato", "../fonts/Lato-Bold", bold, normal),
+        ("Lato", "../fonts/Lato-BoldItalic", bold , italic),
+        ("Lato", "../fonts/Lato-Italic", normal, italic),
+        ("Lato", "../fonts/Lato-Hairline", 300, normal),
+        ("Lato", "../fonts/Lato-HairlineItalic", 300, italic)
+    ),
+    montserrat: (
+        ("Montserrat", "../fonts/Montserrat-Regular", normal, normal),
+        ("Montserrat", "../fonts/Montserrat-Bold", bold, normal),
+        ("Montserrat", "../fonts/Montserrat-Italic", normal, italic),
+        ("Montserrat", "../fonts/Montserrat-Thin", 100, normal),
+        ("Montserrat", "../fonts/Montserrat-ThinItalic", 100, italic)
+    )
+);
+
+
+// =============================================================================
+// Font Face generator 
+// =============================================================================
+
+@mixin font-face($name, $path, $weight: null, $style: null, $exts: woff2 woff) {
+	$src: null;
+
+	@each $ext in $exts {
+		$extmod: $ext;
+		$format: $ext;
+		$src: append($src, url(quote($path + "." + $extmod)) format(quote($format)), comma);
+	}
+
+	@font-face {
+		font-family: quote($name);
+		font-style: $style;
+		font-weight: $weight;
+		src: $src;
+	}
+}
+
+@each $name, $font in $font-map {
+    @each $options in $font {
+        @include font-face($options...);
+    }
+}
+
+
+
+
+

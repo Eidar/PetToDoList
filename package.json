@@ -1,19 +1,31 @@
 {
-  "name": "angular-seed",
+  "name": "to-do-list",
   "private": true,
   "version": "0.0.0",
-  "description": "A starter project for AngularJS",
-  "repository": "https://github.com/angular/angular-seed",
-  "license": "MIT",
+  "description": "Basic to do list pet project",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/eidar"
+  },
   "dependencies": {
     "angular": "^1.7.5",
+    "angular-animate": "^1.7.5",
+    "angular-aria": "^1.7.7",
     "angular-loader": "^1.7.5",
+    "angular-material": "^1.1.13",
+    "angular-messages": "^1.7.7",
     "angular-route": "^1.7.5",
-    "html5-boilerplate": "0.0.1"
+    "browser-module": "0.0.1",
+    "html5-boilerplate": "0.0.1",
+    "jquery": "^3.3.1"
   },
   "devDependencies": {
     "angular-mocks": "^1.7.5",
     "cpx": "^1.5.0",
+    "del": "^3.0.0",
+    "electron": "^4.0.5",
+    "gulp": "^4.0.0",
+    "gulp-sass": "^4.0.2",
     "http-server": "^0.11.1",
     "jasmine-core": "^3.3.0",
     "karma": "^3.1.1",
@@ -38,5 +50,7 @@
     "preprotractor": "npm run update-webdriver",
     "protractor": "protractor e2e-tests/protractor.conf.js",
     "update-index-async": "node --eval \"var fs=require('fs'),indexFile='app/index-async.html',loaderFile='app/lib/angular-loader/angular-loader.min.js',loaderText=fs.readFileSync(loaderFile,'utf-8').split(/sourceMappingURL=angular-loader.min.js.map/).join('sourceMappingURL=lib/angular-loader/angular-loader.min.js.map'),indexText=fs.readFileSync(indexFile,'utf-8').split(/\\/\\/@@NG_LOADER_START@@[\\s\\S]*\\/\\/@@NG_LOADER_END@@/).join('//@@NG_LOADER_START@@\\n'+loaderText+'    //@@NG_LOADER_END@@');fs.writeFileSync(indexFile,indexText);\""
-  }
+  },
+  "main": "main.js",
+  "author": "Matija Katić"
 }

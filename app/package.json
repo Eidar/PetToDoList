@@ -1,0 +1,9 @@
+{
+    "name": "to-do-list",
+    "version": "0.0.1",
+    "main": "main.js",
+    "dependencies": {
+        "browser-module": "0.0.1",
+        "angular-route": "^1.7.5"
+    }
+}
