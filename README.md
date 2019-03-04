@@ -2,7 +2,7 @@
 
 This is a pet project Electron app using AngularJS.
 
-It-s a basic to do list. WIP.
+It's a basic to do list. WIP.
 
 ### Prerequisites
 
@@ -23,7 +23,7 @@ cd pet-todolist/app
 npm start
 ```
 
-Use browser to access the app at [`localhost:8000/index.html`][local-app-url].
+Electron browser window should run automatically containing the AngularJS application.
 
 ### Resources
 
