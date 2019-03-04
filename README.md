@@ -13,8 +13,8 @@ You need git to clone the `pet-todolist` repository. You can get git from [here]
 Clone the `pet-todolist` repository using git:
 
 ```
-git clone https://github.com/angular/angular-seed.git
-cd angular-seed
+git clone https://github.com/Eidar/pet-todolist.git
+cd pet-todolist/app
 ```
 
 ### Run the Application
