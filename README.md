@@ -28,6 +28,7 @@ Electron browser window should run automatically containing the AngularJS applic
 ### Resources
 
 angular-seed: https://github.com/angular/angular-seed
+
 electron: https://github.com/electron
 
 
