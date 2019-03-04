@@ -1,15 +1,3 @@
-// =============================================================================
-// Variables
-// =============================================================================
-$heading-font: 'Montserrat', sans-serif;
-$heading-font-b: bold, 'Montserrat', sans-serif;
-$heading-font-em: italic, 'Montserrat', sans-serif;
-$heading-font-em-b: italic, bold, 'Montserrat', sans-serif;
-
-$text-font: 'Leto', sans-serif;
-$text-font-b: bold, 'Leto', sans-serif;
-$text-font-em: italic, 'Leto', sans-serif;
-$text-font-em-b: italic, bold, 'Leto', sans-serif;
 
 
 // =============================================================================
@@ -51,10 +39,10 @@ $font-map: (
 	}
 
 	@font-face {
-		font-family: quote($name);
+        font-family: quote($name);
+		src: $src;        
 		font-style: $style;
 		font-weight: $weight;
-		src: $src;
 	}
 }
 
@@ -67,4 +55,16 @@ $font-map: (
 
 
 
+// =============================================================================
+// Variables
+// =============================================================================
+$heading-font: "Montserrat", sans-serif;
+$heading-font-b: bold, 'Montserrat', sans-serif;
+$heading-font-em: italic, 'Montserrat', sans-serif;
+$heading-font-em-b: italic, bold, 'Montserrat', sans-serif;
+
+$text-font: 'Lato', sans-serif;
+$text-font-b: bold, 'Lato', sans-serif;
+$text-font-em: italic, 'Lato', sans-serif;
+$text-font-em-b: italic, bold, 'Lato', sans-serif;
 

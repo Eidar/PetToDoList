@@ -7,10 +7,16 @@
 	"settings": {
 		"liveSassCompile.settings.formats":[
 			{
-				"format": "expanded",
+				"format": "nested",
 				"extensionName": ".css",
 				"savePath": "/app/assets/style/css"
 			},
 		],
+		"liveSassCompile.settings.excludeList": [
+			"**/node_modules/**",
+			".vscode/**",
+			"**/lib/angular-material/**"
+		 ],
+		 "liveSassCompile.settings.generateMap": false,
 	}
 }

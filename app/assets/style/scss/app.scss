@@ -1,4 +1,29 @@
 /* app css stylesheet */
 // Imports
 @import "modules/fonts";
+@import "modules/colors";
 @import "main";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    -webkit-app-region: drag;
+    background-color: $primary-clr;
+}
+
+.titlebar--btn {
+    padding: 10px 25px;
+    color: $base-clr;
+    cursor: pointer;
+    -webkit-app-region: no-drag;
+    &:hover{
+        background-color: saddlebrown;
+    }
+}

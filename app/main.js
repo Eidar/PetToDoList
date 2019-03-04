@@ -7,7 +7,7 @@ app.on('ready', function() {
     // Create browser window 
     // with given parameters
     mainWindow = new BrowserWindow({ width: 800, height: 600, frame: false });
-    mainWindow.loadURL("http://localhost:8000");
+    mainWindow.loadFile("index.html");
 
     // It is useful to open dev tools
     // for debug.

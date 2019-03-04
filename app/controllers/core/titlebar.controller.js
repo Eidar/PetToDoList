@@ -4,13 +4,14 @@
   const { BrowserWindow } = require('electron').remote
 
   angular
-  .module('app')
+  .module('app.core')
   .controller('TitleBarCtrl', TitleBarCtrl);
 
   TitleBarCtrl.$inject = ['$scope'];
 
   function TitleBarCtrl ($scope) {
     var win = BrowserWindow.getFocusedWindow();
+    $scope.text = "test";
 
     $scope.close = function() {
       win.close();
@@ -22,4 +23,4 @@
       win.minimize();
     }
   }
-})();
+}());
