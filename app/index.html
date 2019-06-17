@@ -16,8 +16,7 @@
         <div class="titlebar--btn" ng-click="minimize()">&#x1f5d5;</div>
       </header>
 
-      <h2 class="heading-main">Proba</h2>
-      <div id="mainContent" ng-view></div>
+      <div ng-view></div>
     </div>
   <!-- In production use:
   <script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
@@ -33,11 +32,12 @@
   <script src="lib/angular-material/angular-material.js"></script>
 
   <script src="app.js"></script>
-  <!-- Controllers -->
-  <script src="controllers/core/titlebar.controller.js"></script>
-  
+  <!-- Core -->
+  <script src="components/core/titlebar.controller.js"></script>
   <!-- Components -->
-  
+  <script src="components/home/home.controller.js"></script>
+
+
  
 </body>
 </html>

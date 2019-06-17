@@ -2,6 +2,8 @@
 // Imports
 @import "modules/fonts";
 @import "modules/colors";
+@import "modules/icons";
+@import "modules/misc";
 @import "main";
 
 * {
@@ -25,5 +27,32 @@ header {
     -webkit-app-region: no-drag;
     &:hover{
         background-color: saddlebrown;
+    }
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    padding: 1.5em;
+    &--task {
+        padding: 1.5em 0.5em 1.5em 0.5em;
+    }
+}
+
+.card {
+    display: flex;
+    flex-direction: row;
+    &--task {
+        padding: 0.3em;
+        align-items: center;
+    }
+    &--info {
+        flex-direction: column;
+    }
+    &--side {
+        margin-left: auto;
+    }
+    &--center {
+        align-items: center;
     }
 }

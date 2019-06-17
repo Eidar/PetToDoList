@@ -1,0 +1,35 @@
+$values: 1, 2, 3, 4, 5;
+
+@each $value in $values {
+    .p-#{$value} {
+        padding: #{$value}em;
+    }
+    .pt-#{$value} {
+        padding-top: #{$value}em;
+    }
+    .pr-#{$value} {
+        padding-right: #{$value}em;
+    }
+    .pl-#{$value} {
+        padding-left: #{$value}em;
+    }
+    .pb-#{$value} {
+        padding-bottom: #{$value}em;
+    }
+
+    .m-#{$value} {
+        margin: #{$value}em
+    }
+    .mt-#{$value} {
+        margin-top: #{$value}em
+    }
+    .mr-#{$value} {
+        margin-right: #{$value}em
+    }
+    .ml-#{$value} {
+        margin-left: #{$value}em
+    }
+    .mb-#{$value} {
+        margin-bottom: #{$value}em
+    }
+}

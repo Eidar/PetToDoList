@@ -1,0 +1,19 @@
+<div class="container">
+    <div class="card card--center pt-2 pb-2">
+        <span class="icon icon--add" ng-click="addTask()">&nbsp;</span>
+        <h4 class="pl-1">Add a new journal entry</h4>
+    </div>
+
+    <div class="container--task">
+        <div class="card card--task" ng-repeat="task in data.tasks"> 
+            <div class="card card--info">
+                <h3>{{task.title}}</h3>
+                <p>{{task.description}}</p>
+            </div>
+            <div class="card card--side">
+                <span class="icon icon--clock">&nbsp;</span>
+                <span class="icon icon--success">&nbsp;</span>
+            </div>
+        </div>
+    </div>
+</div>

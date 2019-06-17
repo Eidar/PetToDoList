@@ -13,9 +13,14 @@
       'app.services',
       'app.components'
   ]).config(['$locationProvider', '$routeProvider', function($locationProvider, $routeProvider) {
-    $locationProvider.hashPrefix('!');
+    $locationProvider.hashPrefix('');
 
-    $routeProvider.otherwise({redirectTo: '/'});
+    $routeProvider
+      .when('/', {
+        controller: 'homeController',
+        templateUrl: 'components/home/home.template.html'
+      })      
+      .otherwise({redirectTo: '/'});
 
   }]);
 

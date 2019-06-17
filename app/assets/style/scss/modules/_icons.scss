@@ -1,0 +1,43 @@
+.icon {
+    display: block;
+    width: 3em;
+    height: 3em;
+    margin: 0em 0.3em 0em 0.3em;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    &--home {
+        background-image: url("../../style/icons/png/001-home.png");
+    }
+    &--settings {
+        background-image: url("../../style/icons/png/002-settings.png");
+    }
+    &--clock {
+        background-image: url("../../style/icons/png/003-clock.png");
+    }
+    &--play-button {
+        background-image: url("../../style/icons/png/004-play-button.png");
+    }
+    &--down-arrow {
+        background-image: url("../../style/icons/png/005-down-arrow.png");
+    }
+    &--right-arrow {
+        background-image: url("../../style/icons/png/006-right-arrow.png");
+    }
+    &--back-arrow {
+        background-image: url("../../style/icons/png/007-back.png");
+    }
+    &--stats {
+        background-image: url("../../style/icons/png/008-graphic.png");
+    }
+    &--loupe {
+        background-image: url("../../style/icons/png/009-loupe.png");
+    }
+    &--success {
+        background-image: url("../../style/icons/png/010-success.png");
+    }
+    &--add {
+        background-image: url("../../style/icons/png/011-plus.png");
+    }
+
+}
