@@ -2,7 +2,7 @@
 
 This is a pet project Electron app using AngularJS.
 
-It-s a basic to do list. WIP.
+It's a basic to do list. WIP.
 
 ### Prerequisites
 
@@ -13,8 +13,8 @@ You need git to clone the `pet-todolist` repository. You can get git from [here]
 Clone the `pet-todolist` repository using git:
 
 ```
-git clone https://github.com/angular/angular-seed.git
-cd angular-seed
+git clone https://github.com/Eidar/pet-todolist.git
+cd pet-todolist/app
 ```
 
 ### Run the Application
@@ -23,11 +23,12 @@ cd angular-seed
 npm start
 ```
 
-Use browser to access the app at [`localhost:8000/index.html`][local-app-url].
+Electron browser window should run automatically containing the AngularJS application.
 
 ### Resources
 
 angular-seed: https://github.com/angular/angular-seed
+
 electron: https://github.com/electron
 
 
